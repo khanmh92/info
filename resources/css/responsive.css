@@ -1,0 +1,87 @@
+@media only screen and (max-width: 1280px) {
+
+
+@media only screen and (max-width: 1024px) {
+    .main-nav {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 2rem;
+    }
+
+    .mobile-menu span {
+        display: block;
+        margin-right: 2rem;
+    }
+
+    .uk-sticky-fixed .logo {
+        margin-top: 1rem;
+    }
+
+    html {
+        font-size: 57.5%;
+    }
+
+    .contact form {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .service-logo {
+        height: 10rem;
+        margin: 2rem 0;
+    }
+
+    .totop {
+        margin-top: 1rem;
+    }
+
+    .grid-box-service {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .little-description {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 2rem;
+    }
+    html {
+        font-size: 47.5%;
+    }
+
+    .container-about {
+        grid-template-columns: 1fr;
+    }
+
+    .imgbox img {
+        height: 30rem;
+    }
+
+    .grid-contact-container {
+        grid-template-columns: 1fr;
+    }
+    .nested-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        grid-gap: 1rem;
+    }
+
+    .grid-box-service {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-skills {
+        grid-template-columns: 1fr 1fr;
+    }
+    .child-about .des-box {
+        line-height: 1.5;
+    }
+}

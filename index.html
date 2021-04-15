@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Devoloper</title>
+    <link rel="shortcut icon" type="image/x-icon" href="resources/img/logo-red.png">
+    
+    <!--Fonts Link-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+
+    <!--vendors link-->
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="vendors/css/radial-animite.css">
+    <link rel="stylesheet" href="vendors/css/uikit.min.css">
+    <link rel="stylesheet" href="vendors/css/jquery.animatedheadline.css">
+
+    <!--Resources Link-->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/responsive.css">
+
+</head>
+
+<body>
+    <!--START HEADER SECTION-->
+    <header id="home" class="header">
+        <nav style="z-index: 980;" uk-sticky="top: 200; bottom: #animation">
+            <div class="row"><a href="#"><img src="resources/img/logo-white.png" alt="Cuda" class="logo"></a>
+                <ul class="main-nav">
+                    <li><a class="active" href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+                <div class="mobile-menu"><span onclick="openNav()">&#9776;</span>
+
+                    <div id="myNav" class="overlay" onclick="closeNav()">
+                        <a href="javascript:void(0)" onclick="closeNav()" class="closebtn">&times;</a>
+                        <div class="overlay-content">
+                            <a onclick="closeNav()" href="#home">home</a>
+                            <a onclick="closeNav()" href="#about">about</a>
+                            <a onclick="closeNav()" href="#services">services</a>
+                            <a onclick="closeNav()" href="#skills">skills</a>
+                            <a onclick="closeNav()" href="#portfolio">portfolio</a>
+                            <a onclick="closeNav()" href="#contact">contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="hero-text-box">
+                <div class="caption">
+                    <h3>Hello</h3>
+                    <h1 class="ah-headline clip">
+                        <span class="blc">I Am</span>
+                        <span class="ah-words-wrapper">
+                            <b class="is-visible">Mahedi Khan</b>
+                            <b>Web-Developer</b>
+                        </span>
+                    </h1>
+                </div>
+                <a href="#contact" class="btn btn-hero">Contact me</a>
+            </div>
+        </div>
+    </header>
+
+    <!--END HEADER SECTION-->
+
+    <!--START ABOUT SECTION-->
+    <section class="about js--services-section" id="about">
+        <div class="row">
+            <h2>about me</h2>
+        </div>
+        <div class="row">
+            <div class="container-about">
+                <div class="child-about" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                    <div class="imgbox">
+                        <img src="resources/img/s3.png" alt="my photo">
+                    </div>
+                </div>
+                <div class="child-about" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                    <div class="des-box">
+                        <p>I am Md. Mahedi Hasan Khan and working as a front-end web developer. <br> <br>My design is simple and fresh. My coding is W3C validated, fresh, and also hand-coded. I work flexibly with clients to fulfill their design and development needs. Work with me and create a website that you are gonna be proud of. Use my work in your Business, Portfolio, Agency, Photography, etc. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END ABOUT SECTION-->
+
+    <!--START SERVICES SECTION-->
+    <section class="services-section" id="services">
+        <div class="row">
+            <h2>SERVICES I PROVIDE</h2>
+            <p class="little-description">
+            </p>
+        </div>
+        <div class="row">
+            <div class="grid-box-service" uk-scrollspy="cls: uk-animation-fade; target: .box-services; delay: 200; repeat: true">
+                <div class="box-services">
+                    <img src="resources/img/website.png" alt="Web-site" class="service-logo">
+                    <h3>WEB SITE</h3>
+                    <p>Build a web site with clean design and fresh hand code</p>
+                </div>
+                <div class="box-services">
+                    <img src="resources/img/responsive.png" alt="Responsive" class="service-logo">
+                    <h3>RESPONSIVE</h3>
+                    <p>Make your webpage responsive compatible with any device</p>
+                </div>
+                <div class="box-services">
+                    <img src="resources/img/psdtohtml.png" alt="PSD TO HTML" class="service-logo">
+                    <h3>HTML CONVERSION</h3>
+                    <p>Convert PSD, JPEG, XD files to an HTML page with all hand code</p>
+                </div>
+                <div class="box-services">
+                    <img src="resources/img/optimization.png" alt="Optimization" class="service-logo">
+                    <h3>OPTIMIZATION</h3>
+                    <p>Speed up your websites with a page optimization service</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--END SERVICES SECTION-->
+
+
+
+    <!--START SKILLS SECTION-->
+    <section class="skills-section" id="skills">
+        <div class="row">
+            <h2>my skills</h2>
+            <p class="little-description">I got some skills!</p>
+        </div>
+        <div class="row radial-row grid-skills">
+            <div class="grid-skills-items">
+                <svg class="radial-progress web-design" data-percentage="85" viewBox="0 0 80 80">
+                    <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                    <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">85%</text>
+                </svg>
+                <h3>html</h3>
+            </div>
+            <div class="grid-skills-items">
+                <svg class="radial-progress html-css" data-percentage="80" viewBox="0 0 80 80">
+                    <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                    <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">80%</text>
+                </svg>
+                <h3>css</h3>
+            </div>
+            <div class="grid-skills-items">
+                <svg class="radial-progress graphic-design" data-percentage="70" viewBox="0 0 80 80">
+                    <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                    <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">70%</text>
+                </svg>
+                <h3>javascript</h3>
+            </div>
+            <div class="grid-skills-items">
+                <svg class="radial-progress ui-ux" data-percentage="75" viewBox="0 0 80 80">
+                    <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                    <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">75%</text>
+                </svg>
+                <h3>jquery</h3>
+            </div>
+        </div>
+    </section>
+    <!--END SKILLS SECTION-->
+
+    <!--START PORTFOLIO SECTION-->
+
+    <section class="portfolio-section" id="portfolio">
+        <div class="row">
+            <h2>portfolio</h2>
+            <p class="little-description">There are some of my works!</p>
+        </div>
+        <div class="row grid-port">
+            <div class="grid-port-items uk-animation-fade">
+                <a href="https://khanmh92.github.io/portfoli/" target="_blank"><img src="resources/img/laptop-1.png" alt="Paul Lapkin" class="portfolio-img"></a>
+                <h4>an awesome portfolio web page</h4>
+            </div>
+            <div class="grid-port-items uk-animation-fade">
+                <a href="https://khanmh92.github.io/mycuda/" target="_blank"><img src="resources/img/laptop-2.png" alt="l-2" class="portfolio-img"></a>
+                <h4>Cuda responsive landing page</h4>
+            </div>
+        </div>
+    </section>
+
+    <!--END PORTFOLIO SECTION-->
+
+
+    <!-- START CONTACT SECTION -->
+
+    <section id="contact" class="scrollify">
+        <div class="row">
+            <div class="grid-contact-container">
+                <div class="grid-contact-items" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                    <h3>SEND A MESSAGE</h3>
+                    <form action="https://formspree.io/f/mdoyorvn" method="POST">
+                        <div class="single-form">
+                            <input type="text" name="name" placeholder="Name*" required>
+                        </div>
+                        <div class="single-form">
+                            <input type="email" name="email" placeholder="Email*" required>
+                        </div>
+                        <div class="single-form">
+                            <input type="text" name="subject" placeholder="Subject*" required>
+                        </div>
+                        <div class="single-form">
+                            <textarea name="message" cols="30" rows="10" placeholder="Message*" required></textarea>
+                        </div>
+                        <div uk-scrollspy="cls: uk-animation-shake; repeat: true" class="single-form-btn">
+                            <input class="btn btn-full" type="submit" value="SEND">
+                        </div>
+                    </form>
+                </div>
+                <div class="grid-contact-items nested-grid" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                    <div class="nested-grid-items">
+                        <h3>ADDRESS</h3>
+                        <P>Thanthanai Shahid Nogor, Bogura-5800, Bangladesh.</P>
+                    </div>
+                    <div class="nested-grid-items">
+                        <h3>PHONE</h3>
+                        <P>+880 1711 669848 <br> +880 1820 852020</P>
+                    </div>
+                    <div class="nested-grid-items">
+                        <h3>E-mail</h3>
+                        <P>khan.mh92@gmail.com</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END CONTACT SECTION -->
+
+    <!-- START FOOTER SECTION -->
+
+    <footer id="footer" class="scrollify">
+        <div class="row">
+            <div class="social-icons">
+                <ul>
+                    <li><a href="https://www.facebook.com/khan.mh92/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/mahedi-khan" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/khanmh92" target="_blank"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+            <div uk-scrollspy="cls: uk-animation-shake; repeat: true" class="totop">
+                <a href="#" uk-totop uk-scroll></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- END FOOTER SECTION -->
+
+    <!-- JS SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/222b7815f8.js" crossorigin="anonymous"></script>
+    <script src="vendors/js/uikit.min.js"></script>
+    <script src="vendors/js/uikit-icons.min.js"></script>
+    <script src="vendors/js/jquery.animatedheadline.min.js"></script>
+    <script src="vendors/js/html5shiv.min.js"></script>
+    <script src="vendors/js/respond.min.js"></script>
+    <script src="vendors/js/selectivizr.js"></script>
+    <script src="vendors/js/radial-animite.js"></script>
+    <script src="resources/js/script.js"></script>
+</body>
+
+</html>
