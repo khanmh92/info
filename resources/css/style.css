@@ -208,10 +208,6 @@ header {
 
 
 
-
-
-
-
 /*MObile MEnu*/
 .mobile-menu {
     position: relative;
@@ -369,10 +365,10 @@ nav.uk-sticky-fixed {
 }
 
 .services-section h2 {
-    text-shadow: .2rem .3rem rgba(255, 0, 0, 0.5);
+    text-shadow: .7rem .4rem .3rem #000;
+    color: rgba(255, 255, 255,);
 }
 
-.services-section h2,
 .services-section h3,
 .services-section p {
     color: #fff;
@@ -390,8 +386,30 @@ nav.uk-sticky-fixed {
 }
 
 .box-services {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0);
     padding: 1rem;
+    -webkit-transition: .5s;
+    transition: .5s;
+    -webkit-box-shadow: 10px 10px 10px #000;
+    box-shadow: 10px 10px 10px #000;
+    border-radius: 2rem;
+    border: 1px solid #fff;
+}
+.box-services:first-child:hover {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+.box-services:nth-child(2):hover {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+.box-services:nth-child(3):hover {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+.box-services:last-child:hover {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
 }
 
 
