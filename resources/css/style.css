@@ -7,9 +7,12 @@ Common Setup
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-html, body {
+
+html,
+body {
     overflow-x: hidden;
 }
+
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -29,9 +32,15 @@ ul li {
 }
 
 /* HEADING */
-h1, h2, h3, h4, h5, h5 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
     font-family: 'Raleway', sans-serif;
 }
+
 h1 {
     font-size: 4.2rem;
     color: #fff;
@@ -207,6 +216,7 @@ header {
 .mobile-menu {
     position: relative;
 }
+
 .mobile-menu span {
     color: #fff;
     font-size: 4rem;
@@ -271,7 +281,7 @@ header {
 }
 
 .overlay .closebtn {
-/*    position: relative;*/
+    /*    position: relative;*/
     top: 2rem;
     right: 2rem;
     float: right;
@@ -344,8 +354,8 @@ nav.uk-sticky-fixed {
 .child-about .des-box {
     text-align: justify;
     padding: 2rem;
-    line-height: 2.5;
 }
+
 
 /*================================*/
 /*SERVICES SECTION*/
