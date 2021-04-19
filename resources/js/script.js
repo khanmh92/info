@@ -1,39 +1,39 @@
-$(document).ready(function(){
-    
-// animition header
+$(document).ready(function () {
+
+    // animition header
     $('.header').animatedHeadline({
         animationType: 'clip'
     });
- 
- // AVTIVE LINK //
-    $("nav ul li a").click(function(){
+
+    // AVTIVE LINK //
+    $("nav ul li a").click(function () {
         $("nav ul li a").removeClass("active");
         $(this).addClass("active");
     });
-    
-    $("nav a img.logo").click(function(){
+
+    $("nav a img.logo").click(function () {
         $("nav ul li a").removeClass("active");
         $("nav ul li:first-child a").addClass("active");
     });
 
 
-// SMOOTH SCROLL //
-    
-    $("a").on('click', function(event){
-        
-        if (this.hash !== ""){
+    // SMOOTH SCROLL //
+
+    $("a").on('click', function (event) {
+
+        if (this.hash !== "") {
             event.preventDefault();
-            
+
             var hash = this.hash;
-            
+
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
-                }, 800, function(){
+            }, 800, function () {
                 window.location.hash = hash;
             });
         }
     });
-    
+
 });
 
 function openNav() {
@@ -43,4 +43,3 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.width = "0%"
 }
-
