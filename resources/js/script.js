@@ -28,9 +28,7 @@ $(document).ready(function () {
 
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
-            }, 800, function () {
-                window.location.hash = hash;
-            });
+            }, 1000);
         }
     });
 
@@ -43,3 +41,9 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.width = "0%"
 }
+
+
+//Note:  //800 ar por ai code add corle address bar a hash update asbe {}
+// , function () {
+//     window.location.hash = hash;
+// }
