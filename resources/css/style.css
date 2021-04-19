@@ -1,5 +1,5 @@
 /*=====================
-Common Setup
+Common Setup 
 =======================*/
 * {
     margin: 0;
@@ -208,6 +208,10 @@ header {
 
 
 
+
+
+
+
 /*MObile MEnu*/
 .mobile-menu {
     position: relative;
@@ -376,13 +380,13 @@ nav.uk-sticky-fixed {
 
 .service-logo {
     height: 13rem;
-    margin: 6rem 0;
+    margin: 2rem 0;
 }
 
 .grid-box-service {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 2rem;
+    grid-gap: 3rem;
 }
 
 .box-services {
@@ -396,20 +400,20 @@ nav.uk-sticky-fixed {
     border: 1px solid #fff;
 }
 .box-services:first-child:hover {
-    -webkit-transform: rotate(5deg);
-    transform: rotate(5deg);
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
 }
 .box-services:nth-child(2):hover {
-    -webkit-transform: rotate(-5deg);
-    transform: rotate(-5deg);
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
 }
 .box-services:nth-child(3):hover {
-    -webkit-transform: rotate(5deg);
-    transform: rotate(5deg);
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
 }
 .box-services:last-child:hover {
-    -webkit-transform: rotate(-5deg);
-    transform: rotate(-5deg);
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
 }
 
 
@@ -457,11 +461,11 @@ svg.web-design circle {
 }
 
 svg.html-css circle {
-    stroke: #687b00;
+    stroke: #4B0082;
 }
 
 svg.graphic-design circle {
-    stroke: #3b3b3b;
+    stroke: #800000	;
 }
 
 svg.ui-ux circle {
